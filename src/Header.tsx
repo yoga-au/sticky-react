@@ -17,10 +17,14 @@ const Header = () => {
 				</ul>
 			</div> */}
 
-			<button className="btn-reset btn-source">
-				<GithubOutlined />
-				<span className="btn-source-txt">Github Homepage</span>
-			</button>
+			<a className="btn-source-link" href="https://github.com/yoga-au/sticky-react" rel="noreferrer" target="_blank">
+				<button className="btn-reset btn-source">
+						<GithubOutlined />
+						<span className="btn-source-txt">
+							Github Homepage
+						</span>
+				</button>
+			</a>
 		</div>
 	)
 }
