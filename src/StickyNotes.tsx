@@ -24,20 +24,20 @@ const StickyNotes = () => {
 	}, [notesData])
 
 	// a handle to make new note, only used when all notes are empty/deleted
-	const newNote = () => {
+	const newNote = useCallback(() => {
 		setNotesData(() => {
 			return [{ value: 'Start editing this note...' }]
 		})
-	}
+	}, [])
 
 	// a handle to make new note, only used when there is notes existed
-	const addNote = () => {
+	const addNote = useCallback(() => {
 		setNotesData((prevState) => {
 			// using spread syntax to merge to previous state and new state
 			// since useState hook is not auto merge
 			return [...prevState, { value: 'Start editing this note...' }]
 		})
-	}
+	}, [])
 
 	// a handle to delete note
 	// get index parameter from map method in return statement
