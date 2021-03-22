@@ -3,13 +3,32 @@
   margin-top: 32px;
 }
 
+.header-container {
+  max-width: 1200px;
+  margin: 1.5em 2em;
+}
+
+.heading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4rem;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+.description {
+  margin-top: 1em;
+  text-align: center;
+}
+
 .container {
   display: block;
 }
 
 .note-container {
-  width: 40%;
+  width: 80%;
   margin: 0 auto 2.5rem;
+  background: #fff3ab;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
 }
 
 .note-action {
@@ -19,19 +38,93 @@
 
 .note-body {
   width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: .5rem;
+  font-family: 'Work Sans', sans-serif;
 }
 
-@media (min-width: 768px) {
+.btn-reset {
+  all: unset;
+}
+
+.btn-style {
+  padding: .5rem;
+}
+
+.btn-source {
+  /* add display block + margin 0 auto, to center the button */
+  display: block;
+  margin: 1.5em auto 0;
+  border-radius: 2em;
+  font-family: 'Work Sans', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.btn-new {
+  border: 1px dashed rgba(0, 0, 0, .54);
+  padding: 1em;
+  text-align: center;
+  display: block;
+  border-radius: .5em;
+  color:  rgba(0, 0, 0, .4);
+}
+
+.btn-new-text {
+  margin-top: 1em;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2.5em;
+  }
+
+  .note-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 940px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     margin: 0 auto;
-    gap: 2.5rem;
+    gap: 2.5em;
   }
 
   .note-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    margin: 1.5em 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .note-container {
     width: 100%;
-    margin: 0
+    margin: 0 auto;
+  }
+
+  .header-container {
+    margin: 1.5em auto;
   }
 }
