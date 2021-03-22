@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sticky-react/static/css/main.260651af.chunk.css",
+    "main.js": "/sticky-react/static/js/main.3c847259.chunk.js",
+    "main.js.map": "/sticky-react/static/js/main.3c847259.chunk.js.map",
+    "runtime-main.js": "/sticky-react/static/js/runtime-main.d8b241f4.js",
+    "runtime-main.js.map": "/sticky-react/static/js/runtime-main.d8b241f4.js.map",
+    "static/css/2.26cbe6af.chunk.css": "/sticky-react/static/css/2.26cbe6af.chunk.css",
+    "static/js/2.aa49ca0c.chunk.js": "/sticky-react/static/js/2.aa49ca0c.chunk.js",
+    "static/js/2.aa49ca0c.chunk.js.map": "/sticky-react/static/js/2.aa49ca0c.chunk.js.map",
+    "static/js/3.8a95941e.chunk.js": "/sticky-react/static/js/3.8a95941e.chunk.js",
+    "static/js/3.8a95941e.chunk.js.map": "/sticky-react/static/js/3.8a95941e.chunk.js.map",
+    "index.html": "/sticky-react/index.html",
+    "static/css/2.26cbe6af.chunk.css.map": "/sticky-react/static/css/2.26cbe6af.chunk.css.map",
+    "static/css/main.260651af.chunk.css.map": "/sticky-react/static/css/main.260651af.chunk.css.map",
+    "static/js/2.aa49ca0c.chunk.js.LICENSE.txt": "/sticky-react/static/js/2.aa49ca0c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sticky-react/static/media/work-sans-vietnamese-400-normal.61806810.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8b241f4.js",
+    "static/css/2.26cbe6af.chunk.css",
+    "static/js/2.aa49ca0c.chunk.js",
+    "static/css/main.260651af.chunk.css",
+    "static/js/main.3c847259.chunk.js"
+  ]
+}
