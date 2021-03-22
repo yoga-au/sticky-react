@@ -9,8 +9,8 @@ const StickyNotes = () => {
 	}
 
 	// state to hold notes value
-	const [notesData, setNotesData] = useState<Notes[]>([{ value: 'Insert Text Here' }])
-	// state for checking is the notesData empty? or not
+	const [notesData, setNotesData] = useState<Notes[]>([{ value: 'Start editing this note...' }])
+	// state for checking is the notesData empty or not?
 	const [isEmpty, setIsEmpty] = useState<boolean>(false)
 
 	// update isEmpty state when notesData hold zero object
@@ -26,7 +26,7 @@ const StickyNotes = () => {
 	// a handle to make new note, only used when all notes are empty/deleted
 	const newNote = () => {
 		setNotesData(() => {
-			return [{ value: 'Insert Text Here' }]
+			return [{ value: 'Start editing this note...' }]
 		})
 	}
 
@@ -35,7 +35,7 @@ const StickyNotes = () => {
 		setNotesData((prevState) => {
 			// using spread syntax to merge to previous state and new state
 			// since useState hook is not auto merge
-			return [...prevState, { value: 'Insert Text Here' }]
+			return [...prevState, { value: 'Start editing this note...' }]
 		})
 	}
 
@@ -54,7 +54,8 @@ const StickyNotes = () => {
 
 	return (
 		<div className="container">
-			{ console.log(notesData) }
+			{/* console log for debugging */}
+			{/* { console.log(notesData) } */}
 			{/* conditionaly check if isEmpty state true or false
 				if true then it must be the notes are deleted, then render new note button
 				if false it means there is notes data in notesData state, then render the note using map method
